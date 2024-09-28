@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@0,400;0,500;0,600;0&family=Ubuntu:wght@0,400;0,500;0,700&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 23px;
+    border-radius: 30px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecebdc;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.login-section {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img{
+    height: 90px; 
+    margin-right: 20px; 
+    width: 90px;
+    /* margin: 0;  */
+}
+
+.content{
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 200px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    padding: 0 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    border-color: #333;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgb(117, 117, 117);
+  
+}
+
+.form-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-links a {
+    display: flex;
+    font-family: "poppins", sans-serif;
+    color: green;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+input[type="checkbox"] {
+    appearance: none;                                                              /* Remove default checkbox styles */
+    -webkit-appearance: none;                                                      /*For Safari */
+    width: 20px;                                                                   /* Custom size */
+    height: 20px; 
+    margin-left: 0;
+    margin-bottom: 4px;
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    outline: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    position: relative; /* Position for the checkmark */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;                        
+    border-color: #4CAF50; 
+}
+
+input[type="checkbox"]:checked::after {
+    content: ""; 
+    position: absolute;
+    top: 2px; 
+    left: 5px; 
+    width: 3px;                                                                        /* Checkmark size */
+    height: 7px; 
+    border: solid white;                                                             /* Checkmark color */
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg);                                                          /* Rotate to form a checkmark */
+}
+
+.remember-me label {
+    margin-left: 8px; /* Space between checkbox and label */
+    font-size: 14px; /* Font size */
+    color: #333; /* Text color */
+    margin-bottom: 0;
+}
+
+.image-section {
+    width: 50%;
+    padding: 30px;
+    padding-right: 36px;
+    margin: 0;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 0;
+}
+
+.nav{                                         /*change*/
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px 30px;
+    width: 100%;
+    padding-left: 0;
+}
+
+.line {
+    color: #8d8d8d;
+    margin-right: 15px;
+    font-size: 1rem;
+    padding-left: 90px;
+    white-space: nowrap;
+}
+
+.login-section {
+    display: none; 
+    width: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.login-section.active {
+    display: flex;
+    width: 50%; 
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+}
+
+.image-section.active {
+    width: 50%;
+}
+
+.enroll-section {
+    margin-top: 20px;
+}
+
+
+#button-enroll {
+    height: 35px;
+    width: 40%;
+    background-color: #ffffff;
+    border: 0.5px solid  rgb(183, 183, 183);
+    color: green;
+    margin-top: 0;
+    margin-left: auto;
+    padding: 7px;
+}
+
+#button-enroll:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: 550;
+    border: 0.5px solid green;
+} 
+
+.input-field {
+    width: 100%; 
+    margin-right: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.input-box input{
+    width: 91%;
+    height: 50px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.input-box .password-container .input-field {
+    width: 95%;
+    padding-right: 5px;
+    margin-left: 0;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: grey;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
